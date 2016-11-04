@@ -1,0 +1,20 @@
+.camera_caption.bg_3{
+    background:none;
+    -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#BFC82100,endColorstr=#BFC82100);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#BFC82100,endColorstr=#BFC82100);
+    zoom: 1;
+}
+
+.camera_caption.bg_4{
+    background:none;
+    -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#BF59C01A,endColorstr=#BF59C01A);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#BF59C01A,endColorstr=#BF59C01A);
+    zoom: 1;
+}
+
+.camera_caption.bg_1{
+    background:none;
+    -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#BFFFFFFF,endColorstr=#BFFFFFFF);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#BFFFFFFF,endColorstr=#BFFFFFFF);
+    zoom: 1;
+}

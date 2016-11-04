@@ -1,0 +1,284 @@
+﻿@inherits System.Web.Mvc.WebViewPage
+    @{
+
+    }
+<script>
+    $(document).ready(function () {
+        if ($('html').hasClass('desktop')) {
+            new WOW().init();
+        }
+    });
+</script>
+<!--========================================================
+                          CONTENT
+=========================================================-->
+<section id="content">
+    <div class="camera-wrapper">
+        <div id="camera" class="camera_wrap">
+            @*<div data-src="/site/images/index-slide01.jpg">*@
+            <div data-src="/site/images/world.jpg">
+                <div class="camera_caption fadeIn bg_3 color_8">
+                    <h2 class="text_5">
+                        A different kind <br />
+                        of technology <br />
+                        company!
+                    </h2>
+
+                    <p class="text_6">
+                        You decided to look outside of your organization for your software development needs<br /><br /> We understand why.
+                    </p>
+                    <a class="btn_1" href="#">See all products <span class="fa fa-arrow-circle-o-right"></span></a>
+                </div>
+            </div>
+            <div data-src="/site/images/index-slide02.jpg">
+                <div class="camera_caption fadeIn bg_4 color_8">
+                    <h2 class="text_5">
+                        Experienced. Practical. <br />
+                        Innovative.
+                    </h2>
+
+                    <p class="text_6">
+                        We are software developers with a rare mix
+                        of <br />business acumen and outstanding communication ability.
+                        
+                    </p>
+                    <a class="btn_1" href="#">How do we work? <span class="fa fa-arrow-circle-o-right"></span></a>
+                </div>
+            </div>
+            <div data-src="/site/images/sales.jpg">
+                <div class="camera_caption fadeIn bg_1 color_6">
+                    <h2 class="text_5">
+                        Are you tired of <br />being sold to?
+                    </h2>
+
+                    <p class="text_6">
+                        No development firm is a match for every organization, and we know this.  We have worked for many of them,
+                        and we have seen them try.<br /><br />
+                        Business relationships are a two-way partnership.  If we do not feel we are the correct company
+                        to serve your need, we will gladly tell you.
+                    </p>
+                    <a class="btn_1" href="#" style="width:300px;">What makes us different? <span class="fa fa-arrow-circle-o-right"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bg_2">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12 wow fadeInLeft">
+                    <h2 class="header_1 text_7 color_8">
+                        Finally, a consulting company run by developers. <br />
+                        ... putting client solutions first.
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="grid_12 wow fadeInLeft">
+                <h2 class="header_2 text_7 color_6">Our Philosophy</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="grid_6 wow fadeInLeft">
+                <div class="box_1 bg_1 maxheight">
+                    <div class="put-right maxheight2">
+                        <img src="/site/images/index_img01.jpg" alt="Image 1" />
+                    </div>
+                    <div class="inner">
+                        <h3 class="text_8 color_6">
+                            <a href="#">Listen First!</a>
+                        </h3>
+
+                        <p class="text_6 color_10">
+                            It is not a name.  It is not a motto.  It is what we do.  And we have been doing it for years.  Why is this important?
+                        </p>
+
+                        <a class="btn_2 text_3 color_7" href="#">Read more</a>
+
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="grid_6  wow fadeInRight">
+                <div class="box_1 bg_4 maxheight">
+                    <div class="bg_image_1 maxheight2"></div>
+                    <div class="inner">
+                        <h3 class="text_8 color_8">
+                            <a href="#">Any device.  <br />Any data.  <br />Any time.</a>
+                        </h3>
+
+                        <p class="text_6 color_8">
+                            This is what we do.  <br />Technology has finally<br />gotten to the point this <br />is reality.
+                        </p>
+
+                        <a class="btn_2 text_3 color_8" href="#">
+                            Read more
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="grid_3 md_grid_6  wow fadeInLeft">
+                <div class="box_2 bg_3 maxheight1 last-row">
+                    <h3 class="text_8 color_8">
+                        <a href="#">
+                            Who are we?
+                        </a>
+                    </h3>
+
+                    <p class="text_6 color_8">
+                        We are the same caliber of people that walk in the door any time you hire one of the big, well-known, and expensive IT consulting companies.<br />
+                        We have been doing it for them for years.  Now we are doing it for ourselves.  
+                    </p>
+                </div>
+            </div>
+            <div class="grid_3 md_grid_6  wow fadeInLeft">
+                <div class="box_2 bg_2 maxheight1 last-row">
+                    <h3 class="text_8 color_8">
+                        <a href="#">Areas of Specialty</a>
+                    </h3>
+
+                    <p class="text_6 color_8">
+                        Our backgrounds are as technically diverse as our customers.  The tools and platforms we recommend purely depend on your unique situation. We specialize in
+                        using technology to solve business problems.
+                    </p>
+                </div>
+            </div>
+            <div class="grid_6  wow fadeInRight">
+                <div class="box_1 bg_6 last-row">
+                    <div class="put-right"><img src="/site/images/solutions3.jpg" alt="Image 3" /></div>
+                    <div class="inner  maxheight1 ">
+                        <h3 class="text_8 color_8">
+                            <a href="#">Listen  First.<br /> Solution Last.</a>
+                        </h3>
+
+                        <p class="text_6 color_8">
+                            While it is true that you can build a puzzle without seeing the picture on the box, why would you try?
+                            <br />Listen First.  <br />Save time and money.
+                        </p>
+
+                        <a class="btn_2 text_3 color_8" href="#">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="grid_12 wow fadeInLeft">
+                <h2 class="header_3 text_7 color_6">About Us</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="grid_12 wow fadeInLeft">
+                <div class="wrapper_1">
+                    <div class="box_3 last-row">
+                        <h3 class="text_8 color_1">
+                            ListenFirst Solutions is a full service software consulting company owned and operated by software developers who are passionate about using the latestest
+                            technology to deliver practical yet sophisticated solutions to our clients.
+                        </h3>
+
+                        <p class="text_6 color_10">
+                            We operate our company much like a law firm. All of our software engineers are true professionals in every sense of the word, and they are personally 
+                            accountable to you as our customer.  We have no inerest in "padding" head counts to increase profits.  We have no interest in selling you a one-size fits 
+                            all team, technology, or methodology.  The reality is that there is no such thing.  Each client and engagement presents its own unique set of challenges that must 
+                            learned and adapted to.  We don't want your first project.  We want your second one.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg_6">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12 wow fadeInLeft">
+                    <h2 class="header_4 text_7 color_8">Our products</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="grid_6 wow fadeInLeft">
+                    <div class="box_4">
+                        <h3 class="text_8 color_8">
+                            <span class="put-left">
+                                <span class="icon  bg_3 color_8 fa fa-briefcase"></span>
+                            </span>
+                            Lorem ipsum dolor sit amet conse ctetur adipisicing elit.
+                        </h3>
+
+                        <p class="text_6 color_9">
+                            Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incidid- <br />
+                            unt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita- <br />
+                            tion ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <a class="btn_2 text_3 color_8" href="#">Read more</a>
+                    </div>
+                </div>
+                <div class="grid_6 wow fadeInRight">
+                    <div class="box_4">
+                        <h3 class="text_8 color_8">
+                            <span class="put-left">
+                                <span class="icon bg_4 color_8 fa fa-pencil"></span>
+                            </span>
+
+                            Sunt in culpa qui officia deserunt mollit anim id est l
+                        </h3>
+
+                        <p class="text_6 color_9">
+                            Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incidid- <br />
+                            unt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita- <br />
+                            tion ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <a class="btn_2 text_3 color_8" href="#">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper_2">
+                <div class="row">
+                    <div class="grid_6 wow fadeInLeft">
+                        <div class="box_4 last-row">
+                            <h3 class="text_8 color_8">
+                                <span class="put-left">
+                                    <span class="icon bg_2 color_8 fa fa-book"></span>
+                                </span>
+                                Excepteur sint occaecat cupidatat non proident
+                            </h3>
+
+                            <p class="text_6 color_9">
+                                Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incidid-
+                                <br />
+                                unt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita- <br />
+                                tion ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                            <a class="btn_2 text_3 color_8" href="#">Read more</a>
+                        </div>
+                    </div>
+                    <div class="grid_6 wow fadeInRight">
+                        <div class="box_4 last-row">
+                            <h3 class="text_8 color_8">
+                                <span class="put-left">
+                                    <span class="icon bg_1 color_6 fa fa-lock"></span>
+                                </span>
+                                Ipsum dolor sit amet conse ctetur adipisicing elit.
+                            </h3>
+
+                            <p class="text_6 color_9">
+                                Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incidid-
+                                <br />
+                                unt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita- <br />
+                                tion ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                            <a class="btn_2 text_3 color_8" href="#">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

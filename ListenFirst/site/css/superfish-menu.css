@@ -1,0 +1,152 @@
+/* Main menu styles
+========================================================*/
+nav {
+  position: relative;
+  z-index: 2;
+  float: right;
+}
+.sf-menu {
+  padding: 55px 0 54px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.sf-menu > li {
+  float: left;
+  position: relative;
+  margin-left: 35px;
+}
+.sf-menu > li > a:hover,
+.sf-menu > li.current > a,
+.sf-menu > li.sfHover > a {
+  color: #333333;
+}
+.sf-menu > li > a {
+  color: #2797ef;
+  font: normal 19px/19px 'Roboto', sans-serif;
+  text-transform: capitalize;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+.sf-menu > li > a.fa {
+  position: relative;
+}
+.sf-menu > li > a.fa:before {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  font: normal 14px 'FontAwesome';
+  line-height: 25px;
+  margin-left: 2px;
+}
+.sf-menu ul li {
+  border-top: 1px solid #292929;
+}
+.sf-menu > li > ul > li:first-child {
+  border: none;
+}
+.sf-menu a {
+  display: block;
+  text-decoration: none;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+/* First level sub-menu styles
+========================================================*/
+.sf-menu > li > ul {
+  position: absolute;
+  top: 75px;
+  left: -12px;
+}
+.sf-menu ul {
+  width: 210px;
+  z-index: 5;
+  display: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #3d3d3d;
+}
+.sf-menu ul li {
+  position: relative;
+}
+.sf-menu ul li a {
+  display: block;
+  padding: 0 14px 3px;
+  color: #ffffff;
+  font: normal 13px/31px 'Roboto', sans-serif;
+}
+.sf-menu ul li a:hover {
+  background-color: #0687ec;
+}
+.sf-menu ul li a.fa {
+  position: relative;
+}
+.sf-menu ul li a.fa:before {
+  position: absolute;
+  top: 6px;
+  right: 13px;
+  font: normal 11px 'FontAwesome';
+  line-height: 25px;
+  margin-left: 2px;
+}
+.sf-menu ul li.sfHover > a {
+  background-color: #0687ec;
+}
+/* Second level sub-menu styles
+========================================================*/
+.sf-menu ul > li > ul {
+  position: static;
+  margin-left: 0;
+  background: #3d3d3d;
+  z-index: 4;
+}
+.sf-menu ul > li > ul li a {
+  color: #ffffff;
+}
+.sf-menu ul > li > ul li a:hover {
+  background: #0687ec;
+}
+.select-menu {
+  display: block;
+  width: 100%;
+  -webkit-appearance: none;
+  font: normal 19px/28px 'Roboto', sans-serif;
+  margin-bottom: 21px;
+}
+@media (max-width: 979px) {
+  nav {
+    display: inline-block;
+    float: none;
+  }
+  nav .sf-menu {
+    padding-top: 0;
+  }
+  nav .sf-menu > li > ul {
+    top: 54px;
+    left: 50%;
+    margin-left: -105px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  nav {
+    display: block;
+  }
+  nav .sf-menu {
+    display: none;
+    padding: 10px 0;
+  }
+}
+.put-left {
+  float: left;
+}
+.put-right {
+  float: right;
+}
+.last-child {
+  margin-bottom: 0!important;
+  padding-bottom: 0!important;
+}

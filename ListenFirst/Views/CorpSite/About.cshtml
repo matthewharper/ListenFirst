@@ -1,0 +1,232 @@
+﻿@inherits System.Web.Mvc.WebViewPage
+@{
+    
+}
+
+<script>
+        $(document).ready(function () {
+            if ($('html').hasClass('desktop')) {
+                new WOW().init();
+                $('#stuck_container').TMStickUp({
+                })
+            }
+        });
+</script>
+
+<!--========================================================
+                          CONTENT
+=========================================================-->
+<section id="content" ng-controller="aboutCtrl">
+    @*<span>{{mattFoo}}</span>*@
+    <div class="container">
+        <div class="row">
+            <div class="grid_12 wow fadeInLeft">
+                <h2 class="header_6 text_7 color_6">Why Us?</h2>
+            </div>
+        </div>
+        <div class="wrapper_1">
+            <div class="row">
+                <div class="grid_3 wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="box_5">
+                        <div class="icon bg_3 color_8"><span>1</span></div>
+                        <h3 class="text_8 color_1">
+                            Engage.
+                        </h3>
+
+                        <p class="text_6 color_10">
+                            Face time.  <br />Let's get to know each other.<br />
+                            We will describe our development and delivery processes.
+                        </p>
+                        <img src="~/site/images/start.png" />
+                    </div>
+                </div>
+                <div class="grid_3 wow fadeInLeft" data-wow-delay="0.4s">
+                    <div class="box_5">
+                        <div class="icon bg_4 color_8"><span>2</span></div>
+                        <h3 class="text_8 color_1">
+                            Listen.
+                        </h3>
+
+                        <p class="text_6 color_10">
+                            Technology aside, 
+                            what <br />problem are you trying to <br />solve?
+                            If you can say it,<br />
+                            we can build it.
+                        </p>
+                        <img src="~/site/images/next1.png" />
+                    </div>
+                </div>
+                <div class="grid_3 wow fadeInRight" data-wow-delay="0.6s">
+                    <div class="box_5">
+                        <div class="icon bg_2 color_8"><span>3</span></div>
+                        <h3 class="text_8 color_1">
+                            Propose.
+                        </h3>
+
+                        <p class="text_6 color_10">
+                            Options presented clearly.<br />
+                            You pick the best fit for your budget and schedule.<br /><br />
+                        </p>
+                        <img src="~/site/images/next1.png" />
+                    </div>
+                </div>
+                <div class="grid_3 wow fadeInRight" data-wow-delay="0.8s">
+                    <div class="box_5">
+                        <div class="icon bg_6 color_8"><span>4</span></div>
+                        <h3 class="text_8 color_1">
+                            Deliver.
+                        </h3>
+
+                        <p class="text_6 color_10">
+                            We execute the plan.<br />
+                            You are there the entire time.<br />
+                            It really is that simple.<br /><br />
+                        </p>
+                        <img src="~/site/images/finish_flag.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg_6">
+        <div class="container">
+            <div class="wrapper_1">
+                <div class="row">
+                    <div class="grid_8 wow fadeInLeft">
+                        <h2 class="header_7 text_7 color_8">Our history</h2>
+
+                        <div class="box_6 last-row">
+                            <h3 class="text_8 color_8">
+                                We formed ListenFirst Solutions because we are a group of software engineers who truly enjoy building things.<br />
+                                Traditional outsourcing or consulting companies are driven primarily by sales.  We believe that focus hinders 
+                                their ability to deliver a solid product.  We don't want your first project. We want your second one.
+                            </h3>
+
+                            <p class="text_6 color_9">
+                                ListenFirst Solutions was formed by a group of IT Consultants who spent the better part of their careers on the road working for
+                                many of the large and expensive consulting companies you would recognize by name.  While we learned a ton and were exposed to
+                                many, many projects and environments, we knew there had to be a better way to deliver custom software to clients looking outside of their
+                                own organization.<br /><br />
+                                Technology has finally made this a reality.  Many organizations have come to accept remote development teams as part of normal
+                                business operations (overseas or domestic).  We use many cloud based solutions such as GitHub, Axure, Visual Studio Online, Jira, 
+                                and many more to integrate seamlessly with your organization.  We are only a video conference away.<br /><br />
+                                This allows us to focus on your project and to ultimately deliver a solid product.  Building things is what drives us.  What
+                                can we build for you?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid_4 wow fadeInRight" data-wow-delay="0.2s">
+                        <h2 class="header_7 text_7 color_8">Opportunities</h2>
+
+                        <div class="box_7">
+                            <h3 class="text_8 color_8">
+                                Mobile Developers
+                            </h3>
+
+                            <p class="text_6 color_9">
+                                Are you a Xamarin RockStar? <br />
+                                Are you passionate about iOS and Android?
+                            </p>
+                        </div>
+
+                        <div class="box_7">
+                            <h3 class="text_8 color_8">
+                                UX/UI
+                            </h3>
+
+                            <p class="text_6 color_9">
+                                Seeking a "master of the whiteboard"! <br />
+                                Are you the type of person who opens an application and says, "Why did they make this so hard to use?"
+                            </p>
+                        </div>
+
+                        <div class="box_7 last-child">
+                            <h3 class="text_8 color_8">
+                                So you think you can program?
+                            </h3>
+
+                            <p class="text_6 color_9">
+                               Tell me why.<br />
+                                <a class="btn_2 text_3 color_8" href="/Company/Contact">Contact Us</a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="wrapper_1">
+            <div class="row">
+                <div class="grid_4 wow fadeInLeft" data-wow-delay="0.2s">
+                    <h2 class="header_3 text_7 color_6">Advantages</h2>
+
+                    <div class="box_8">
+                        <div class="fa fa-eye put-left-abs color_6"></div>
+                        <h3 class="text_8 color_1">
+                            <a href="#">Big Picture Vision</a>
+                        </h3>
+
+                        <p class="text_6 color_10">
+                            Technology is only one factor. <br />
+                            Big picture encompasses People, Budgets, Timelines, Legacy Considerations, and Future Needs.
+                        </p>
+                    </div>
+                    <div class="box_8">
+                        <div class="fa fa-globe put-left-abs color_6"></div>
+                        <h3 class="text_8 color_1">
+                            <a href="#">Global Exposure</a>
+                        </h3>
+
+                        <p class="text_6 color_10">
+                            We have for or with companies around world.<br />
+                            We have worked in conjunction with foreign teams and picked up the pieces after them.
+                        </p>
+                    </div>
+                    <div class="box_8 last-child">
+                        <div class="fa fa-group put-left-abs color_6"></div>
+                        <h3 class="text_8 color_1">
+                            <a href="#">Our Developer Network</a>
+                        </h3>
+
+                        <p class="text_6 color_10">
+                            Over the years, we have developed a large network of contacts that work for many of the companies that create the software you use daily.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid_3 wow fadeInUp" data-wow-delay="0.6s">
+                    <h2 class="header_3 text_7 color_6">Skills</h2>
+                    <ul class="marked-list">
+                        <li><a href="#">System Architecture</a></li>
+                        <li><a href="#">Full SDLC Experience <br />(inception - delivery)</a></li>
+                        <li><a href="#">Any Device. Any Time. </a></li>
+                        <li><a href="#">Anything .NET</a></li>
+                        <li><a href="#">Legacy Integration or Upgrades</a></li>
+                        <li><a href="#">Business Process Optimization </a></li>
+                        <li><a href="#">Microsoft Certified Trainer </a></li>
+                        <li><a href="#">Ability to Rapidly Understand<br />Existing Systems</a></li>
+                    </ul>
+                </div>
+                <div class="grid_5 wow fadeInRight" data-wow-delay="0.4s">
+                    <h2 class="header_3 text_7 color_6">Testimonials</h2>
+
+                    <div class="box_9">
+                        <div class="put-left"><img src="/images/index-1_img01.jpg" alt="Image 1" /></div>
+                        <p class="caption color_10">
+                            Praesent vestibulum molestie lacus aenean nony drerit mauris phasellus porta. Fusce suscipit
+                            varius
+                            mi cum sociis natoque pena...”
+                        </p>
+
+                        <p class="author text_12 color_1"><a href="#">Jessica Priston</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+

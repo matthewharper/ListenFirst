@@ -1,0 +1,157 @@
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	@Styles.Render("~/bundles/cssCorp")
+	
+	<!--[if lt IE 9]>
+	<div style=' clear: both; text-align:center; position: relative; background: #fff;'>
+		<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+			<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0"
+				 height="42" width="820"
+				 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+		</a>
+	</div>
+
+	<script src="js/html5shiv.js"></script>
+	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+	<![endif]-->
+</head>
+@Scripts.Render("~/bundles/jsShared")
+@Scripts.Render("~/bundles/jsCorp")
+<body>
+	<div class="page">
+		<!--========================================================
+								  HEADER
+		=========================================================-->
+		<header id="header">
+			<div id="stuck_container">
+				<div class="container">
+					<div class="row">
+						<div class="grid_12">
+							<div class="brand">
+								<h1>
+									<a href="./">
+										<span class="text_1">
+											<span class="color_6">L</span>
+											<span class="color_2">i</span>
+											<span class="color_5">s</span>
+											<span class="color_1">t</span>
+											<span class="color_6">e</span>
+											<span class="color_2">n</span>
+										</span>
+										<span class="text_2 color_6">FIRST</span>
+									</a>
+								</h1>
+							</div>
+
+							@{//mjh: Clean this up. ng-attr would be better so class attr is never added to the DOM if no value, but it only takes
+							  //        a boolean to determine whether or not to render.  Fundamental flaw in my understanding.
+
+							}
+							<nav ng-controller="navSettingsCtrl">
+								<ul class="sf-menu">
+									<li class="{{companyHome}}"><a href="/Company">Home</a></li>
+
+									<li>
+										<a class="fa fa-caret-down" href="index-2.html">Example Work</a>
+										<ul>
+											<li><a href="#">ASP.NET / MVC</a></li>
+											<li><a href="#">AngularJS</a></li>
+											<li>
+												<a class="fa fa-caret-down" href="#">Past Projects </a>
+												<ul>
+													<li><a href="#">Project 1 </a></li>
+													<li><a href="#">Project 2 </a></li>
+													<li><a href="#">Project 3</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li class="{{news}}"><a href="/Company/News">News</a></li>
+									<li class="{{about}}"><a href="/Company/About">About </a></li>
+									<li class="{{contact}}"><a href="/Company/Contact">Contact</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+
+
+		@RenderBody()
+
+
+
+		<!--========================================================
+								  FOOTER
+		=========================================================-->
+		<footer id="footer">
+			<div class="bg_1 wrapper_3">
+				<div class="container">
+					<div class="row">
+						<div class="grid_3 wow fadeInLeft" data-wow-delay="0.2s">
+							<h2 class="header_5 text_3 color_6">Company</h2>
+							<ul class="list">
+								<li><a href="/Company/News"</a>News</li>
+								<li><a href="/Company/About">About </a></li>
+								<li><a href="/Comapny/Contact">Contact</a></li>
+							</ul>
+						</div>
+						<div class="grid_3 wow fadeInLeft" data-wow-delay="0.4s">
+							<h2 class="header_5 text_3 color_6">Example Work</h2>
+							<ul class="list">
+								<li><a href="#">ASP.NET / MVC </a></li>
+								<li><a href="#">Angular</a></li>
+								<li><a href="#">Past Projects</a></li>
+							</ul>
+						</div>
+						<div class="grid_3 wow fadeInRight" data-wow-delay="0.6s">
+							<h2 class="header_5 text_3 color_6">Clients and Partners</h2>
+							<ul class="list">
+								<li><a href="#">Do eiusmod tempor</a></li>
+								<li><a href="#">Incididunt ut labore </a></li>
+							</ul>
+						</div>
+						<div class="grid_3 wow fadeInRight" data-wow-delay="0.8s">
+							<h2 class="header_5 text_3 color_6">Follow Us</h2>
+							<ul class="social-list">
+								<li><a class="fa fa-twitter" href="#"></a></li>
+								<li><a class="fa fa-facebook" href="#"></a></li>
+								<li><a class="fa fa-rss" href="#"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="grid_12">
+						<div class="info text_11">
+							<a href="./Account/Login/?returnURL=%2Fforum%2Fforum.aspx">Matthew Harper©</a> 2015. <a href="/Company/Privacy">Privacy Policy</a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="@RouteJs.RouteJsHandler.HandlerUrl"></script>
+
+
+	<script src="/Scripts/angular.js"></script>
+	<script src="/Scripts/angular-route.js"></script>
+	<script src="/MyJs/app.js"></script>
+	<script src="/MyJs/controllers.js"></script>
+
+
+</body>
+</html>
+
